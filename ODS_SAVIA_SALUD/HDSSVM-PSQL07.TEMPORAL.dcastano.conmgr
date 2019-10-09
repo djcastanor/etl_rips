@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="HDSSVM-PSQL07.TEMPORAL.dcastano"
+  DTS:DTSID="{DF1E5236-550B-4B66-B9A1-0F8BFBBF3ADF}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=HDSSVM-PSQL07;User ID=dcastano;Initial Catalog=TEMPORAL;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoM+LrJND1EWCvotCd/gYpQAAAAACAAAAAAADZgAAwAAAABAAAACDD+q/2uAhFVa/E40BEiW0AAAAAASAAACgAAAAEAAAAE1uLnwZxOyQ0yFW8QQngHaAAAAAdPIyF17u4cKC8NrPfRwMpHUUuu7E7hqgmWP0u9BKJho6qfuoozqw5calNTkZn/BG6nfc68Tlfu4vVulzjhZZBw1ItWKMBmN0z4IOIhDOq23AfObsRhBD+cP8BoxNvdisIu3DaSCg1Pvb1Mmhs9AFOUT7RVVwq7Z7FgssrhRAmIwUAAAAKTljg9p4dICU27NFtEIKaD1Dw3Y=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

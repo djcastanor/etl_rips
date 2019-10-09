@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Integration Services Savia Salud", "Integration Services Savia Salud\Integration Services Savia Salud.dtproj", "{301066A7-3EE9-44EF-94C3-81987B4D25FA}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ODS_SAVIA_SALUD", "ODS_SAVIA_SALUD\ODS_SAVIA_SALUD.dtproj", "{D1518883-8737-427C-89DC-0AA4C08520E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301066A7-3EE9-44EF-94C3-81987B4D25FA}.Development|Default.ActiveCfg = Development
+		{301066A7-3EE9-44EF-94C3-81987B4D25FA}.Development|Default.Build.0 = Development
+		{D1518883-8737-427C-89DC-0AA4C08520E3}.Development|Default.ActiveCfg = Development
+		{D1518883-8737-427C-89DC-0AA4C08520E3}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D640EE7F-E9F9-4690-8C18-A42D1B794684}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.softwareestrategico.com:8080/dba_collection_2015
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Integration\u0020Services\u0020Savia\u0020Salud\\Integration\u0020Services\u0020Savia\u0020Salud.dtproj
+		SccProjectName1 = Integration\u0020Services\u0020Savia\u0020Salud
+		SccLocalPath1 = Integration\u0020Services\u0020Savia\u0020Salud
+		SccProjectUniqueName2 = ODS_SAVIA_SALUD\\ODS_SAVIA_SALUD.dtproj
+		SccProjectName2 = ODS_SAVIA_SALUD
+		SccLocalPath2 = ODS_SAVIA_SALUD
+	EndGlobalSection
+EndGlobal

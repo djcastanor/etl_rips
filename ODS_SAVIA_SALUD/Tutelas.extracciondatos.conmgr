@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Tutelas.extracciondatos"
+  DTS:DTSID="{6BFDE6BE-CC9B-4ACB-8C63-25548147AF23}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=extracciondatos;Dsn=TU2;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbu1qD+wtxk2s5CIo61FFOAAAAAACAAAAAAADZgAAwAAAABAAAADt9zdWQ4oNkkJ1rGEweG6xAAAAAASAAACgAAAAEAAAAEcjHhRcIQ2COGO+/KaANOFwAAAAClp7CEOG4++3Gdt8nZH7/nsicoxDToXj38DypGz9xo2elTWoCRuZcs5oowdCn+oQgg/G5YhqyzidJCvn2qXYnjRQ4qWJr7kaP7SZ/1ncrY5nf6H+QbfY0XPaGOf9u5acRxfpx94+yMRDcm5zZ96xAhQAAADujcjFkCrtfkawM5G5C2GRVbfoaQ==</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
