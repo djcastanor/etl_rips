@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="PaqueteRIPS"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{1F5FDD16-4904-4BF8-A8CC-67175B0AD7B9}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{0EEBCEA2-A0C2-4BB8-A8AA-EE2DE292A4C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoM+LrJND1EWCvotCd/gYpQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACUsSrLpmRja0D61VKlnbs0AAAAAASAAACgAAAAEAAAABE7KTOZjr3zaHkiY+3gnCkoAAAAV88oXe33TJqJ8arjaFtGEmN2JtHgmocj3niuGSthxwyenEkOqSmVghQAAACusaJiPf52aydBm9hCzUZpsuX9Cg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoM+LrJND1EWCvotCd/gYpQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACATc9DfSdbB91baZGCJTToAAAAAASAAACgAAAAEAAAAIUW0cnb96WPgNu22P0lNW0oAAAA5et9kjjhEkfLXSgO97sCnD+rD2TtvqO7SRCoIZUKTOJ04AjmpGOzRBQAAACTKZDOiFQb4KNSe16Et+W+rpdc2w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoM+LrJND1EWCvotCd/gYpQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYCtcZ3Lz0tgd00IWHGF8jAAAAAASAAACgAAAAEAAAADhZTF6dEe4eByW4f3oOT1soAAAA6AnUy1sOzlUeqqeItS8K6zzcol+4ge6q+pJz12thL3VAojgaUeApURQAAAC2UfM67khRzE3d1R+tO5Iq0CxeIQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoM+LrJND1EWCvotCd/gYpQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADHNIbbSk1yizmj9mLzRB4kAAAAAASAAACgAAAAEAAAALqrGL4d7u7cTw8/EXhYJ3coAAAAfcJq8e0Ew4cqLxssb33wY0yMIYwEGaunVU+7d4LWN4WsuLskItwe/xQAAAC2i0ERuRyRBT/gUOuKJJsmS6fUxQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2139,6 +2139,78 @@ where [refTable].[nom_tipo_diagnostico] = ?</property>
                               cachedName="id_tipo_diagnostico"
                               externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_tipo_diagnostico]"
                               lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_tipo_dx.Outputs[Salida de entradas coincidentes de búsqueda].Columns[id_tipo_diagnostico]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO PRESTADOR]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="13"
+                              cachedName="CODIGO PRESTADOR"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_prestador]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO PRESTADOR]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE IDENTIFICACION]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="3"
+                              cachedName="TIPO DE IDENTIFICACION"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_tipo_documento]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIPO DE IDENTIFICACION]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO SERVICIO]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="CODIGO SERVICIO"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_servicio]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO SERVICIO]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FINALIDAD CONSULTA]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="2"
+                              cachedName="FINALIDAD CONSULTA"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[finalidad_consulta]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[FINALIDAD CONSULTA]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CAUSA EXTERNA]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="2"
+                              cachedName="CAUSA EXTERNA"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[causa_externa]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[CAUSA EXTERNA]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG PRINCIPAL]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG PRINCIPAL"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_ppal]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG PRINCIPAL]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG R1]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG R1"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado1]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG R1]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG R2]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG R2"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado2]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG R2]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG R3]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG R3"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado3]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG R3]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -2226,6 +2298,60 @@ where [refTable].[nom_tipo_diagnostico] = ?</property>
                               refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_tipo_diagnostico]"
                               dataType="i4"
                               name="id_tipo_diagnostico" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_prestador]"
+                              codePage="1252"
+                              dataType="str"
+                              length="13"
+                              name="cod_prestador" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_tipo_documento]"
+                              codePage="1252"
+                              dataType="str"
+                              length="3"
+                              name="cod_tipo_documento" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_servicio]"
+                              codePage="1252"
+                              dataType="str"
+                              length="20"
+                              name="cod_servicio" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[finalidad_consulta]"
+                              codePage="1252"
+                              dataType="str"
+                              length="2"
+                              name="finalidad_consulta" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[causa_externa]"
+                              codePage="1252"
+                              dataType="str"
+                              length="2"
+                              name="causa_externa" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_ppal]"
+                              codePage="1252"
+                              dataType="str"
+                              length="6"
+                              name="cod_diagnostico_ppal" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado1]"
+                              codePage="1252"
+                              dataType="str"
+                              length="6"
+                              name="cod_diagnostico_relacionado1" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado2]"
+                              codePage="1252"
+                              dataType="str"
+                              length="6"
+                              name="cod_diagnostico_relacionado2" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado3]"
+                              codePage="1252"
+                              dataType="str"
+                              length="6"
+                              name="cod_diagnostico_relacionado3" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -2863,7 +2989,7 @@ where [refTable].[nom_tipo_diagnostico] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_consultas"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5230,6 +5356,62 @@ where [refTable].[cod_via_ingreso] = ?</property>
                               cachedName="id_estado_salida"
                               externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_estado_salida]"
                               lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_estado_salida.Outputs[Salida de entradas coincidentes de búsqueda].Columns[id_estado_salida]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO IDENTIFICACION]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="3"
+                              cachedName="TIPO IDENTIFICACION"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_tipo_documento]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIPO IDENTIFICACION]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG INGRESO]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG INGRESO"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_ingreso]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG INGRESO]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG EGRESO]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG EGRESO"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_egreso]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG EGRESO]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG_ER1]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG_ER1"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_1]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG_ER1]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG_ER2]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG_ER2"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_2]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG_ER2]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG_ER3]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG_ER3"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_3]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG_ER3]" />
+                            <inputColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIAG_COMP]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="6"
+                              cachedName="DIAG_COMP"
+                              externalMetadataColumnId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_complementario]"
+                              lineageId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIAG_COMP]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -5327,6 +5509,48 @@ where [refTable].[cod_via_ingreso] = ?</property>
                               dataType="str"
                               length="1"
                               name="id_estado_salida" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_tipo_documento]"
+                              codePage="1252"
+                              dataType="str"
+                              length="2"
+                              name="cod_tipo_documento" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_ingreso]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_ingreso" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_egreso]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_egreso" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_1]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_relacionado_1" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_2]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_relacionado_2" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_relacionado_3]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_relacionado_3" />
+                            <externalMetadataColumn
+                              refId="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cod_diagnostico_complementario]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="cod_diagnostico_complementario" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -6021,7 +6245,7 @@ where [refTable].[cod_via_ingreso] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_hostipalizaciones"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -7344,7 +7568,7 @@ group by  [NUMERO FACTURA]
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_medicamentos"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -9031,7 +9255,7 @@ group by [NUMERO FACTURA]
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_neonatos"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -10510,7 +10734,7 @@ where [refTable].[num_factura] = ? and [refTable].[archivo_control] = ?</propert
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_otros"
-              DTS:ThreadHint="8">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -13343,7 +13567,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_procedimientos"
-              DTS:ThreadHint="7">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -17973,7 +18197,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_urgencias"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="7">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -19672,7 +19896,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_usuarios"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="8">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -19859,6 +20083,10 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Size="145,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Otros\cm_rips_otros"
           TopLeft="277.75,26.5000000000001" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Otros\Truncate cm_rips_otros"
+          TopLeft="31.5,25" />
         <EdgeLayout
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Otros.PrecedenceConstraints[Restricción]"
           TopLeft="221.5,46.7500000000001">
@@ -19881,10 +20109,6 @@ where [refTable].[cod_tipo_documento] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Otros\Truncate cm_rips_otros"
-          TopLeft="31.5,25" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -19925,7 +20149,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="540,124"
+          PanelSize="540,125"
           Size="540,168"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Procedimientos"
           TopLeft="1251,240.5" />
@@ -20056,6 +20280,14 @@ where [refTable].[cod_tipo_documento] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="128,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_dx_rel1"
+          TopLeft="59,210" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Data Conversion"
+          TopLeft="61,115" />
+        <NodeLayout
           Size="171,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination"
           TopLeft="71,385" />
@@ -20072,14 +20304,6 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_causa_ext"
           TopLeft="485,212" />
         <NodeLayout
-          Size="150,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source"
-          TopLeft="58,31" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Data Conversion"
-          TopLeft="61,115" />
-        <NodeLayout
           Size="169,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_tipo_documento"
           TopLeft="493,117" />
@@ -20092,6 +20316,18 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_dx_ppal"
           TopLeft="266,202" />
         <NodeLayout
+          Size="154,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Derived Column"
+          TopLeft="423,28" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Source"
+          TopLeft="58,31" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Buscar IPS_SEDE"
+          TopLeft="273,115" />
+        <NodeLayout
           Size="128,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_tipo_dx"
           TopLeft="511,283" />
@@ -20099,18 +20335,108 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Size="178,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_finalidad_consulta"
           TopLeft="685,205" />
-        <NodeLayout
-          Size="128,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\id_dx_rel1"
-          TopLeft="59,210" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Derived Column"
-          TopLeft="423,28" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\Buscar IPS_SEDE"
-          TopLeft="273,115" />
+        <EdgeLayout
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[OLE DB Source Output]"
+          TopLeft="208,50.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="215,0"
+              Start="0,0"
+              End="207.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="207.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Lookup Match Output]"
+          TopLeft="433,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60,0"
+              Start="0,0"
+              End="52.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.94138671875,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Derived Column Output]"
+          TopLeft="500,70">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-361,45"
+              Start="0,0"
+              End="-361,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="-4,22.5" />
+                  <mssgle:LineSegment
+                    End="-357,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-357,22.5"
+                    Point2="-361,22.5"
+                    Point3="-361,26.5" />
+                  <mssgle:LineSegment
+                    End="-361,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Data Conversion Output]"
+          TopLeft="217,136">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56,0"
+              Start="0,0"
+              End="48.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Salida de entradas coincidentes de búsqueda8]"
           TopLeft="575,325">
@@ -20375,124 +20701,51 @@ where [refTable].[cod_tipo_documento] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[OLE DB Source Output]"
-          TopLeft="208,50.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="215,0"
-              Start="0,0"
-              End="207.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="207.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Lookup Match Output]"
-          TopLeft="433,137">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="60,0"
-              Start="0,0"
-              End="52.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="52.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-21.94138671875,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Derived Column Output]"
-          TopLeft="500,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-361,45"
-              Start="0,0"
-              End="-361,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="-4,22.5" />
-                  <mssgle:LineSegment
-                    End="-357,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-357,22.5"
-                    Point2="-361,22.5"
-                    Point3="-361,26.5" />
-                  <mssgle:LineSegment
-                    End="-361,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas.Paths[Data Conversion Output]"
-          TopLeft="217,136">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="56,0"
-              Start="0,0"
-              End="48.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="48.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de RIPS\Contenedor de RIPS Consultas\cm_rips_consultas\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="164,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_complemen"
-          TopLeft="508,329" />
+          Size="124,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_ing"
+          TopLeft="317,184" />
         <NodeLayout
           Size="171,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination"
           TopLeft="30,442" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_estado_salida"
+          TopLeft="277,335" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_rel1"
+          TopLeft="46,251" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_complemen"
+          TopLeft="508,329" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\Derived Column"
+          TopLeft="391,25" />
         <NodeLayout
           Size="156,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\Data Conversion"
@@ -20510,9 +20763,9 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_egr"
           TopLeft="45,179" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\Derived Column"
-          TopLeft="391,25" />
+          Size="150,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source"
+          TopLeft="35,25" />
         <NodeLayout
           Size="147,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_via_ingreso"
@@ -20522,29 +20775,13 @@ where [refTable].[cod_tipo_documento] = ?</property>
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_rel3"
           TopLeft="512,255" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_ing"
-          TopLeft="317,184" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_causa_externa"
-          TopLeft="569,189" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Source"
-          TopLeft="35,25" />
-        <NodeLayout
           Size="160,42"
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\Buscar IPS_SEDE"
           TopLeft="41,334" />
         <NodeLayout
-          Size="157,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_estado_salida"
-          TopLeft="277,335" />
-        <NodeLayout
-          Size="128,42"
-          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_dx_rel1"
-          TopLeft="46,251" />
+          Size="161,42"
+          Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\id_causa_externa"
+          TopLeft="569,189" />
         <EdgeLayout
           Id="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones.Paths[Salida de entradas coincidentes de búsqueda9]"
           TopLeft="277,355.5">
@@ -20926,6 +21163,19 @@ where [refTable].[cod_tipo_documento] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de RIPS\Contenedor de RIPS Hostipalizaciones\cm_rips_hostipalizaciones\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Contenedor de RIPS\Contenedor de RIPS Medicamentos\cm_rips_medicamentos">
     <LayoutInfo>
