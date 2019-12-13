@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="PaqueteRIPS"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{CD30368D-3CF8-45B2-ACDA-51F08F1DA797}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{6AC5A29D-FBB1-49CD-B7A5-B1D2C2BF5FB9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJGSYW6rOLEWd5YzvFizf3QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABZfhg3gKHVmBjLHhsksPR4AAAAAASAAACgAAAAEAAAAGcu/KzLW87aBkx8zgsO4wMoAAAAqrUaLqAFXgGUi3PImLfsNGY7ysj7IUAr3i+FQhHuJ0uKSEbWY5FfGxQAAAAt9pfeAtG10DWyfTR8f3AWvtmMMw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJGSYW6rOLEWd5YzvFizf3QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD7NHWT3tZXBixC2AwLAnYZAAAAAASAAACgAAAAEAAAAM9porl60B8SzCt8+CPeZ5QoAAAAPN+xzIrteUwsTyNUlqtZQoTwYjdGG6zL1KbVUsFI+Kpb+CNyMTPZFBQAAADiDfoklRjYZH/2VfmbOO7Yg9+HCA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJGSYW6rOLEWd5YzvFizf3QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABxFJS+ASi6TA0Da8KHc13kAAAAAASAAACgAAAAEAAAACgOzN483J9We82JnV2pSjQoAAAAuMJIX/Q3XsU1JS8T+lsb2OiZ3R+fxUjHnl94XCnyQkH8A7OEqEw9ZBQAAAAIBFKsJz+Om5fosrq2Cn00uzTOVg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJGSYW6rOLEWd5YzvFizf3QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzUZ47yuK47NeFpW5m79tjAAAAAASAAACgAAAAEAAAAKDaKup7j72BiK7FJNO3oPgoAAAAUtksOXURz3rYwrMETLuial6sajygbNzZXi5oWmErjh/JD5u3pZUpBhQAAADhu+pJrEP8JL4H+qxEYx6m1+LWdQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3215,7 +3215,7 @@ where [refTable].[nom_tipo_diagnostico] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_consultas"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4634,7 +4634,7 @@ where [refTable].[cod_habilitacion_sede] = ? and [refTable].[archivo_control] = 
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_control"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -8097,7 +8097,7 @@ where [refTable].[cod_via_ingreso] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_hostipalizaciones"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -11366,7 +11366,7 @@ where [refTable].[cod_habilitacion_sede] = ?</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{EE5347B8-21C7-44A0-96DF-B3BB319D20B0}"
-                  SQLTask:SqlStatementSource="ALTER TABLE [dbo].[cm_detalles_diagnosticos]  &#x9;DROP CONSTRAINT &#x9;[FK_cm_detalles_diagnosticos_cm_cuentas_medicas_detalles]&#xA;ALTER TABLE [dbo].[cm_detalles_glosas]  &#x9;DROP CONSTRAINT &#x9;[FK_cm_detalles_glosas_cm_cuentas_medicas_detalles]&#xA;&#xA;ALTER TABLE cm_rips_consultas&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_consultas_cm_rips_facturas&#xA;ALTER TABLE cm_rips_control&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_control_cm_rips_facturas&#xA;ALTER TABLE cm_rips_hospitalizaciones&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_hospitalizaciones_cm_rips_facturas&#xA;ALTER TABLE cm_rips_medicamentos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_medicamentos_cm_rips_facturas&#xA;ALTER TABLE cm_rips_recien_nacidos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_recien_nacidos_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_otros_servicios&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_otros_servicios_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_procedimientos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_procedimientos_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_urgencias&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_urgencias_cm_rips_facturas&#xA;&#xA;TRUNCATE TABLE cm_rips_facturas&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_consultas] &#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_consultas_cm_rips_facturas] &#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_consultas]  &#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_consultas_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_control] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_control_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_control]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_control_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_hospitalizaciones] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_hospitalizaciones_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_hospitalizaciones]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_hospitalizaciones_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_medicamentos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_medicamentos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_medicamentos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_medicamentos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_recien_nacidos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_recien_nacidos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_recien_nacidos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_recien_nacidos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_otros_servicios] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_otros_servicios_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_otros_servicios]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_otros_servicios_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_procedimientos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_procedimientos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_procedimientos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_procedimientos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_urgencias] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_urgencias_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_urgencias]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_urgencias_cm_rips_facturas]&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="ALTER TABLE cm_rips_consultas&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_consultas_cm_rips_facturas&#xA;ALTER TABLE cm_rips_control&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_control_cm_rips_facturas&#xA;ALTER TABLE cm_rips_hospitalizaciones&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_hospitalizaciones_cm_rips_facturas&#xA;ALTER TABLE cm_rips_medicamentos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_medicamentos_cm_rips_facturas&#xA;ALTER TABLE cm_rips_recien_nacidos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_recien_nacidos_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_otros_servicios&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_otros_servicios_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_procedimientos&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_procedimientos_cm_rips_facturas&#x9;&#xA;ALTER TABLE cm_rips_urgencias&#x9;&#x9;DROP CONSTRAINT &#x9;FK_cm_rips_urgencias_cm_rips_facturas&#xA;&#xA;TRUNCATE TABLE cm_rips_facturas&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_consultas] &#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_consultas_cm_rips_facturas] &#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_consultas]  &#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_consultas_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_control] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_control_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_control]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_control_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_hospitalizaciones] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_hospitalizaciones_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_hospitalizaciones]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_hospitalizaciones_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_medicamentos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_medicamentos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_medicamentos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_medicamentos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_recien_nacidos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_recien_nacidos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_recien_nacidos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_recien_nacidos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_otros_servicios] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_otros_servicios_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_otros_servicios]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_otros_servicios_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_procedimientos] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_procedimientos_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_procedimientos]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_procedimientos_cm_rips_facturas]&#xA;&#xA;ALTER TABLE [dbo].[cm_rips_urgencias] &#x9;&#x9; WITH NOCHECK ADD  CONSTRAINT &#x9;[FK_cm_rips_urgencias_cm_rips_facturas] &#x9;&#x9;FOREIGN KEY([id_rips_factura]) &#xA;REFERENCES [dbo].[cm_rips_facturas] ([id_rips_factura])&#xA;ALTER TABLE [dbo].[cm_rips_urgencias]  &#x9;&#x9;noCHECK CONSTRAINT &#x9;[FK_cm_rips_urgencias_cm_rips_facturas]&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -14387,7 +14387,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_procedimientos"
-              DTS:ThreadHint="7">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -16267,7 +16267,7 @@ group by [NUMERO FACTURA]
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_recien_nacidos"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -17130,7 +17130,7 @@ where [refTable].[cod_habilitacion_sede] = ? and [refTable].[num_factura] = ?</p
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_servicios_agrupados"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="8">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -18755,7 +18755,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_otros_servicios"
-              DTS:ThreadHint="6">
+              DTS:ThreadHint="9">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -22146,7 +22146,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_urgencias"
-              DTS:ThreadHint="9">
+              DTS:ThreadHint="6">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -23817,7 +23817,7 @@ where [refTable].[cod_tipo_documento] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate cm_rips_usuarios"
-              DTS:ThreadHint="8">
+              DTS:ThreadHint="7">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
